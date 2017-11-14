@@ -12,8 +12,8 @@ export default {
           commit(types.devicetabbar , bool);
       },
       getSourceList({commit},that){
-        that.$get('/api/'+url).then(res=>{
-          console.log(res.data.list,'res')
+        that.$get(`/api/${ url }&page=1`).then(res=>{
+            console.log(res.data.list,'res')
             commit(types.getSourceList,res.data.list);
         })
       }

@@ -14,7 +14,7 @@ export default {
           loop: false,
           grabCursor : false,
            onTransitionStart(swiper){
-             console.log(swiper.activeIndex)
+             console.log(swiper.activeIndex,swiper)
            },
           coverflow: {
           　　rotate: 30,

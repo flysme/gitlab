@@ -1,2 +1,2 @@
 // 获取所有信息
-export const url = 'api_open.php?a=list&c=data&type=41&page=1000'
+export const url = 'api_open.php?a=list&c=data&type=41'

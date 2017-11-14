@@ -12,7 +12,6 @@
   export default{
     data () {
       return{
-
       }
     },
     created(){
@@ -30,6 +29,9 @@
     methods:{
       init(){
           // 获取所有数据   由于actions中的this指向不同 ，所以需要把this传过来
+        this.getSourceList();
+      },
+      getSourceList(){
           this.$store.dispatch('getSourceList',this);
       },
       buyshop(){
@@ -38,9 +40,8 @@
       }
     },
     components:{
-      
-    }
 
+    }
   }
 </script>
 <style scoped>
