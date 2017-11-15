@@ -18,6 +18,7 @@
     "mint-ui": "^2.2.9",
     "node-sass": "^4.6.0",
     "sass-loader": "^6.0.6",
+    "vee-validate": "^2.0.0-rc.21",
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.0.1",
