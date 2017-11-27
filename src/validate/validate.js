@@ -29,7 +29,7 @@ const dictionary = {
 };
 
 Validator.updateDictionary(dictionary);
-// 自定义表单扩展
+// 自定义表单扩展==>phone
 Validator.extend('phone', {
   messages: {
     zh_CN:field => field + '必须是11位手机号码',
@@ -38,7 +38,7 @@ Validator.extend('phone', {
     return value.length == 11 && /^((13|14|15|17|18)[0-9]{1}\d{8})$/.test(value)
   }
 });
-// 自定义表单扩展
+// 自定义表单扩展==>qq
 Validator.extend('qq', {
   messages: {
     zh_CN:field => 'qq号码输入不正确'

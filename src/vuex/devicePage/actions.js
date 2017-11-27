@@ -5,7 +5,7 @@ import * as types from './mutations_type';
  */
  import { url } from '@/service/url';
 
-
+import { Indicator } from 'mint-ui';
 
 export default {
       devicetabbar({ commit },bool){
@@ -15,6 +15,7 @@ export default {
         that.$get(`/api/${ url }&page=1`).then(res=>{
             console.log(res.data.list,'res')
             commit(types.getSourceList,res.data.list);
+            Indicator.close();
         })
       }
 }

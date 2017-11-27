@@ -1,11 +1,19 @@
 <template>
-  <div id="second">精华</div>
+  <div id="second">
+         <p>过滤器filter的使用</p> 
+        <div>{{name | reverseStr}}</div>
+        <div>{{name | reverseStr}}</div>
+        <div>{{name | reverseStr}}</div>
+        <div>{{name | reverseStr}}</div>
+        <div>{{name | reverseStr}}</div>
+
+  </div>
 </template>
 <script>
   export default{
     data () {
       return {
-        
+          name:"我是大头"
       }
     }
   }
@@ -15,5 +23,6 @@
       width: 100%;
       height: 100vh;
       background: blue;
+      color: #fff;
     }
 </style>
