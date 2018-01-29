@@ -2,9 +2,10 @@
   <div class="hello">
     <Headers></Headers>
     <transition :name="transitionName">
-      <router-view class="child-view"></router-view>
+        <router-view class="child-view" style="width:350px;height:350px;background:red;"></router-view>
     </transition>
-    <tabbar></tabbar>
+       <router-view class="child-views" name="register" style="width:50%;height:350px;background:pink;"></router-view> 
+   <tabbar :message='my' ref="profile"></tabbar>
   </div>
 </template>
 
@@ -16,7 +17,8 @@
     data () {
       return {
         msg: 'Welcome to Your Vue.js App',
-        transitionName:'slide-left'
+        transitionName:'slide-left',
+        my:'我的'
       }
     },
     components:{
@@ -35,11 +37,14 @@
          // 做完回退动画后，要设置成前进动画，否则下次打开页面动画将还是回退
          this.$router.isBack = false
            next()
+      },
+      mounted(){
+          console.log(this.$refs.profile)
       }
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- Add "scoped" attribute to limit CSS to this component only
 <style lang="scss" scoped>
        $primary-color: red;
       .btn {

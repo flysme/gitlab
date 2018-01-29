@@ -9,8 +9,8 @@ import axios from 'axios';
 
 export function get(url,params={}){
     return new Promise((resolve,reject)=>{
-       let urls = '/api/'.concat(url);
-        axios.get(urls,{
+       // let urls = '/api'.concat(url);   使用mock时注释
+        axios.get(url,{   //urls 替换成url
           params:params,
         }).then(res=>{
           resolve(res);

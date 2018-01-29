@@ -35,12 +35,16 @@
         <div @click="setmess(2121212)">11111</div>
         <p>directive自定义指令的使用</p>
         <div v-drag style="width:200px;height:100px;background:red">我可以拖拽</div>
+        <div>111
+        <loading :name='121212'></loading>
+        </div>
     </div>
 </div>
   </div>
 </template>
 <script>
   import {mapGetters,mapState,mapActions} from 'vuex';
+  import loading from '@/components/common/loading.vue'
   import { Indicator } from 'mint-ui';
   export default{
     data () {
@@ -49,12 +53,11 @@
       }
     },
     created(){
-      this.init();
+      // this.init();
     },
     mounted(){
       console.log(this.$store.getters.devicesourceList,'xxxxx')
       console.log('name',name);
-        Indicator.open('加载中...');
     },
     computed:{
         ...mapState({
@@ -65,28 +68,28 @@
         //     devicesourceList:devicesourceList
         // })
     },
-    // methods:mapActions(['getSourceList']),
-    methods:{
-      ...mapActions(['getSourceList']),
-      init(){
-        this.getSourceList(this);
-          // 获取所有数据   由于actions中的this指向不同 ，所以需要把this传过来
-        // this.getSourceLists();
-      },
-      // 要点： 要写在methods下面，因为mapActions/mapMutations只是把action/mutation函数绑定到你的methods里了;你调methods里的方法的时候照常传参就可以了。
-      // getSourceLists(){
-          // this.$store.dispatch('getSourceList',this);
-      // },
-      buyshop(){
-          this.$router.push({ path: 'detail/buy/'});
-          this.$store.dispatch('devicetabbar' , false);
-      },
-      setmess(atr){
-        console.log(atr)
-      }
-    },
+    methods:mapActions(['getSourceList']),
+    // methods:{
+    //   ...mapActions(['getSourceList']),
+    //   init(){
+    //     // this.getSourceList(this);
+    //       // 获取所有数据   由于actions中的this指向不同 ，所以需要把this传过来
+    //     // this.getSourceLists();
+    //   },
+    //   // 要点： 要写在methods下面，因为mapActions/mapMutations只是把action/mutation函数绑定到你的methods里了;你调methods里的方法的时候照常传参就可以了。
+    //   // getSourceLists(){
+    //       // this.$store.dispatch('getSourceList',this);
+    //   // },
+    //   buyshop(){
+    //       this.$router.push({ path: 'detail/buy/'});
+    //       this.$store.dispatch('devicetabbar' , false);
+    //   },
+    //   setmess(atr){
+    //     console.log(atr)
+    //   }
+    // },
     components:{
-
+        loading
     },
     watch:{
     }

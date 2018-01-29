@@ -1,0 +1,60 @@
+lvf
+  控件：
+   文本          text_view  
+   固定图片  static_image_view  
+   富文本           richtext_view  
+   固定文本  static_text_view 
+   图片                image_view
+   浮岛式标签     tag_1_widget
+   图标式标签     tag_2_widget
+   连接式标签   tag_3_widget
+   搜索控件         search_widget
+   购物车操作     shopping_cart_operation_widget  zyf
+  多图横滑          sideslip_widget
+  时间段选择       time_period_widget
+
+功能组件
+   筛选器          filter_menu
+   栏目栏组件   filter_node
+   左侧栏目栏    left_filter_node
+  列表搜索组件            list_search
+浮动组件
+   浮动布局组件   float_component
+详情组件
+    详情点赞组件    detail_component_praise
+    详情评论组件    detail_component_comment
+    详情Tab组件     detail_component_column
+ 列表组件
+   错位组件     Dislocate
+   图集组件      ListUI16
+   瀑布流组件    ListUI3
+   折叠组件        expanding_component
+   布局组件         layout_component
+   图文拼插        CmpItemCard 
+zfx
+  控件
+   多图幻灯      slider_widget
+   九宫图          mulit_images_widget
+
+功能组件
+    横滑导航器               navigator3
+    等高导航器         navigator2
+    标准列表导航器        navigator1
+  浮动组件
+    购物车工具条           shoppingcart_toolbar  zyf
+    详情底栏组件           detail_component_bottombar
+详情组件
+   促销活动卡片组件    promotion_card
+   限时购详情组件       timed_discount
+   详情音频组件          detail_component_audio
+   详情视频组件    detail_component_video
+   轮播视频组件     component_video_view
+
+ 列表组件
+ 钢琴键组件         PianoKey
+ 标准列表组件     ListUI1
+ 大图组件            ListUI2
+ 幻灯组件            Slider
+ 等高组件        ListUI4
+ 横滑组件            SideSlip
+ 视频组件            ListUI14

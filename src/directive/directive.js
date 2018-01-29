@@ -15,6 +15,3 @@ Vue.directive('drag',{bind(el,binding,vnode){
 
 }})
 
-Vue.filter('reverseStr', function(value) {
-    return value.split('').reverse().join('')
-});

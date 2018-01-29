@@ -12,8 +12,10 @@ export default {
           commit(types.devicetabbar , bool);
       },
       getSourceList({commit},that){
+        console.log('111111');
+        Indicator.open('加载中...');
         that.$get(`/api/${ url }&page=1`).then(res=>{
-            console.log(res.data.list,'res')
+            console.log(res.data.list,'res');
             commit(types.getSourceList,res.data.list);
             Indicator.close();
         })

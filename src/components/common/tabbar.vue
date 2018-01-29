@@ -17,7 +17,7 @@
               </mt-tab-item>  
               <mt-tab-item id="fourth">  
                 <img slot="icon" src="../../assets/logo.png">  
-                我的  
+                {{message}}  
               </mt-tab-item>  
             </mt-tabbar> 
        </div> 
@@ -36,6 +36,10 @@
           // router 用来指定模块名
           console.log(this.status);
           // console.log(this.$store.state.router.status);
+        },
+        // props:['message'],
+        props:{
+          message:String
         },
         methods:{
 

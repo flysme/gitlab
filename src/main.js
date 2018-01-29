@@ -7,7 +7,9 @@ import 'lib-flexible/flexible.js'
 import { get,post } from './service/http';
 import './validate/validate'
 import store from './vuex/store';
+import mock from './utils/mock';
 import './directive/directive';
+import './filter/filter';
 import VueLazyload from 'vue-lazyload'
 import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';

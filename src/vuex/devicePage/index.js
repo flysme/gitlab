@@ -7,7 +7,7 @@ export default {
     state:{
       status:true,
       sourceList:[],
-       swiperOption: {
+      swiperOption: {
           paginationClickable: false,
           autoplayDisableOnInteraction: false,
            direction : 'vertical',
